@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sports</title>
+    <link rel="stylesheet" type="text/css" href="styles/nutrition.css">
+    <style>
+        .accordion {
+  background-color: rgb(223, 201, 201);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(43, 57, 184);
+  padding: 10px;
+  border-radius: 10px;
+}
+.active, .centered:hover {
+  background-color: rgb(88, 10, 10);
+
+}
+.active, .accordion:hover {
+  background-color: rgb(209, 94, 94);
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(6, 14, 83);
+  padding: 10px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 65%;
+ padding-left: 150px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="top">
+        <div class="bar">
+          <a href="homepage.html" class="left">
+            <img src="img/logo.png" style="width:100%" alt=""><br>
+            Healthly
+          </a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="right">
+            <br>
+            <a href="exercise.html" class="bar-item button">Exercises</a>
+            <a href="nutritions.html" class="bar-item button">Nutritions</a>
+            <a href="sports.html" class="bar-item button">Sports</a>
+            <a href="contact.html" class="bar-item button">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+<center><h1 style="font-style: italic; color: crimson; padding-top: 100px;">Sports</h1></center>
+      </div>
+
+      <div class="row" style="margin-bottom: 20px;">
+        <div class="leftcolumn">
+          <div class="card">
+              <h1>NEWS</h1>
+
+              <button class="accordion"> <div class="container"><img src="img/football.jpg" style="height: 300px; width: 100%;" alt="">
+                  <div class="top-left">FOOTBALL</div>
+                <div class="centered">
+Read More
+                </div></div></button>
+              <div class="panel">
+                <p>If you want to become a better football player, regardless
+                     of your position, you'll need to develop a high level of conditioning. At Healthly,
+                     you'll not only get football-specific conditioning workouts, you'll also find strength and power workouts
+                     from pros like Patrick Willis and Tim Tebow,
+                    speed drills from Chris Johnson, nutrition and supplement advice, and drills for every position on the field.</p>
+              </div>
+
+
+          </div>
+          <div class="card">
+
+              <button class="accordion"> <div class="container"><img src="img/basketball.jpg" style="height: 300px; width: 100%;" alt="">
+                  <div class="top-left">BASKETBALL</div>
+                  <div class="centered">
+                    Read More
+                                    </div></div></button>
+              <div class="panel">
+                <p>Basketball is a fast-paced sport that requires explosive strength,
+                  top speed, agility and fine-tuned on-court skills. At STACK, you'll find the
+                  basketball workouts and drills you're looking for to take your game to the next level.
+                  Come back daily for basketball training videos from stars like Dwyane Wade and Dwight Howard,
+                  drills from some of the nation's top basketball programs and advice from professional coaches and trainers.
+                  Watch more exercises and drills by browsing our basketball training videos..</p>
+              </div>
+          </div>
+          <div class="card">
+              <button class="accordion"> <div class="container"><img src="img/tennis.jpg" style="height: 300px;width: 100%;" alt="">
+                  <div class="top-left">TENNIS</div>
+                  <div class="centered">
+                    Read More
+                                    </div></div></button>
+              <div class="panel">
+                <p>Check out Healthly's tennis workouts to improve your first-step speed, quickness, footwork, balance and overall strength.
+                  In addition to strength and conditioning training, STACK also has tennis drills to improve every aspect of your game,
+                  nutrition advice for serious athletes and the latest gear reviews. Get even more advice from today's top tennis coaches
+                  and athletes through our library of tennis training videos.</p>
+              </div>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <fieldset>
+                <legend style="padding: 10px;border: 5px rgba(87, 6, 6, 0.774) solid; border-radius: 10px;
+                background-color: bisque; color: rgb(46, 39, 39); font-weight: 600;">Latest Trend</legend>
+               <div> <img src="img/cycling.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                <p>Nine Signs You're the Perfect Sports Parent With obesity on the rise in this video game generation,
+                   how do we get kids interested in sport? We've all... </p></div>
+                     <hr>
+                     <div> <img src="img/cricket.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                        <p>Drafted here for the newly-interested Coach who may have inherited a hockey team of interested players,
+                          this list is bound to increment the skillset o... </p></div>
+                             <hr>
+                             <div> <img src="img/golf.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                                <p>When it comes to our kids, we want the best for them. If they are passionate about a sport,
+                                  we'll do everything possible to help them reach their full... </p></div>
+            </fieldset>
+
+          </div>
+          <div class="card">
+            <fieldset>
+                <legend style="padding: 10px;border: 5px rgba(87, 6, 6, 0.774) solid; border-radius: 10px;
+                 background-color: bisque; color: rgb(46, 39, 39); font-weight: 600;">Latest Trend</legend>
+               <div> <img src="img/car.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                <p>I got into boxing relatively late, at 18. Most of the fighters I know started much younger.
+                  I've been around many community youth boxing programs for ... </p></div>
+                     <hr>
+                     <div> <img src="img/soccer.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                        <p>So you just got offered a scholarship to attend your dream university and could not be more excited.
+                          You can't wait to show up on campus, ready to sho... </p></div>
+                             <hr>
+                             <div> <img src="img/basketball.jpg" alt="" style="height: 100px;width: 100px;float: left;margin: 10px">
+                                <p>So you just got offered a scholarship to attend your dream university and could not be more excited.
+                                  You can't wait to show up on campus, ready to sho... </p></div>
+            </fieldset>
+          </div>
+
+        </div></div>
+
+
+      <footer style="display-container; padding:64px; text-align:center;background-color :red; xlarge;">
+        <p class="medium text-white"><br>
+          <b>Healthly Inc. | No 9 Jalan Nirwana 35, Taman Nirwana 68000 Ampang Selangor | 03-9283 3628 | enquiries@healthly.com
+          </b>
+        </p><br>
+        <p class="small text-white"><b>
+        Copyright © 2020 Fitness Concept. All Rights Reserved.</b></p>
+      </footer>
+  </div>
+  </body>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+</html>
